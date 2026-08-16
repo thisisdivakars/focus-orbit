@@ -1,0 +1,2 @@
+import {Scenario} from 'Leaf.lspkg/Scenarios/scenario/Scenario';import {expect} from 'Leaf.lspkg/Utils/common/Expect';import {findSceneObjectByName,sleep} from 'Leaf.lspkg/Utils/common/Utils'
+@component export class FocusOrbitLaunchScenario extends Scenario{async run(){await sleep(1500);expect(findSceneObjectByName('Focus Core')).not.toBeNull();expect(findSceneObjectByName('Task-prototype')).not.toBeNull();expect(findSceneObjectByName('Task-assets')).not.toBeNull()}}

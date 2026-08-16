@@ -1,0 +1,2 @@
+import {Scenario} from 'Leaf.lspkg/Scenarios/scenario/Scenario';import {expect} from 'Leaf.lspkg/Utils/common/Expect';import {findSceneObjectByName,sleep} from 'Leaf.lspkg/Utils/common/Utils';import {tap} from './FocusOrbitLeafTestUtils'
+@component export class FocusOrbitPhase2PlanUIScenario extends Scenario{async run(){await sleep(1500);await tap('Action-PLAN');expect(findSceneObjectByName('FocusRecommendationPanel')!.enabled).toBe(true);expect(findSceneObjectByName('Action-ACCEPT')!.enabled).toBe(true)}}

@@ -1,0 +1,2 @@
+import {Scenario} from 'Leaf.lspkg/Scenarios/scenario/Scenario';import {expect} from 'Leaf.lspkg/Utils/common/Expect';import {findSceneObjectByName,sleep} from 'Leaf.lspkg/Utils/common/Utils';import {tap} from './FocusOrbitLeafTestUtils'
+@component export class FocusOrbitPhase2DismissScenario extends Scenario{async run(){await sleep(1500);await tap('Action-PROFILE');await tap('Action-CLOSE');expect(findSceneObjectByName('FocusProfilePanel')!.enabled).toBe(false);expect(findSceneObjectByName('Task-prototype')!.enabled).toBe(true)}}

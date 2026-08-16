@@ -1,0 +1,2 @@
+import {Scenario} from 'Leaf.lspkg/Scenarios/scenario/Scenario';import {expect} from 'Leaf.lspkg/Utils/common/Expect';import {findSceneObjectByName,sleep} from 'Leaf.lspkg/Utils/common/Utils';import {tap} from './FocusOrbitLeafTestUtils'
+@component export class FocusOrbitPhase2ConfirmationScenario extends Scenario{async run(){await sleep(1500);const before=findSceneObjectByName('Task-assets')!.getTransform().getWorldPosition();await tap('Action-PLAN');const after=findSceneObjectByName('Task-assets')!.getTransform().getWorldPosition();expect(before.equal(after)).toBe(true)}}

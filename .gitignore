@@ -1,0 +1,74 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+temp/
+Temp/
+tmp/
+
+# Node / package temp if present
+node_modules/
+
+# Codex / AI local state
+.codex/
+.codex.tmp/
+.claude/
+
+# Local QA / raw evidence not needed in public repo
+QA_Captures/
+SubmissionBackups/
+DesignRefs/
+
+# Large/raw development archives
+*Raw_logs*
+*raw_logs*
+*Hackathon_Raw*
+*.zip
+
+# Common generated/cache folders
+Library/
+Cache/
+Caches/
+DerivedData/
+Build/
+build/
+dist/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Windows backup files
+*~
+*.bak
+
+# Local AI / agent tooling
+.cursor/
+.mcp.json
+AGENTS.md
+CLAUDE.md
+
+# Lens Studio generated/local state
+.virtual-scene.json
+.icon_tmp/
+PluginsUserPreferences/
+Support/
+Workspaces/
+tempAssetGen/
+
+# Development screenshots - keep out of repo
+FocusOrbit*.jpg
+FocusOrbit*.jpeg
+FocusOrbit*.png
+
+# Spectacles debug/signing keys
+spk_debug_key.pem

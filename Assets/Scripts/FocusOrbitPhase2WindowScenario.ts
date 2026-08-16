@@ -1,0 +1,3 @@
+import {Scenario} from 'Leaf.lspkg/Scenarios/scenario/Scenario';import {expect} from 'Leaf.lspkg/Utils/common/Expect';import {FocusProfileManager,FocusSessionMetric} from './FocusOrbitAdaptive'
+const r=(a:number,valid:boolean):FocusSessionMetric=>({taskId:'x',sessionStartTimeMs:0,sessionEndTimeMs:1,activeFocusTimeMs:a*60000,pausedTimeMs:0,pauseCount:0,completed:valid,deferredOrExited:!valid,estimatedMinutes:20,actualMinutes:a,switchCount:0})
+@component export class FocusOrbitPhase2WindowScenario extends Scenario{async run(){expect(new FocusProfileManager().calculate([r(20,true),r(0,false),r(30,true)]).preferredFocusMinutes===25).toBe(true)}}

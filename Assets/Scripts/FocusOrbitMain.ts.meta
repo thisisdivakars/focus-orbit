@@ -1,0 +1,52 @@
+- !<AssetImportMetadata/9a4e4afc-21e1-4577-9f83-9a85a6506d64>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 1dbef8d7-ac46-4daf-83e2-9c09ec3dbbdc
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 1dbef8d7-ac46-4daf-83e2-9c09ec3dbbdc
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 89fe8781-592d-4af5-876b-58f192496441
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/89fe8781-592d-4af5-876b-58f192496441>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 40e45c13-798d-43d6-ae78-69e34d048457
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    completionVfx: false
+    core: false
+    ui: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - ui: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      core: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      completionVfx: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType_1 ui
+    - // @input SceneObject core
+    - // @input SceneObject completionVfx
