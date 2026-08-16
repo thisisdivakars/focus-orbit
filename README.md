@@ -456,5 +456,4 @@ XR / Game Developer, Full-Stack & AI Developer
 ## License
 
 This project was created for the CLAD Summer Hackathon.
-
-Add the final repository license here before publishing if required.
+All rights hold by Creator & Hackathon Organization 
